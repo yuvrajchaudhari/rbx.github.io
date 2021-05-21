@@ -24,6 +24,9 @@ li{list-style-type: none;}
 
 /* ------------------Header
 --------------------------------- */
+.navbar-light .navbar-brand {
+  padding: 15px 0px 10px;
+}
 .banner{
   position: relative;
     background-image: url("../images/banner.jpg"); /* The image used */

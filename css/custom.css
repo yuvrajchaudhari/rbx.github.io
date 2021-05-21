@@ -578,7 +578,14 @@ footer .fa-youtube {
 [data-aos-delay] {
   transition-delay: 0 !important;
 }
+/* -------------------------------------- */
 
+.banner {
+  height: auto;
+  padding: 0px 0;
+}
+
+.circle1,.circle2{height:15px;}
     .enterprise .content {
       padding: 7px;
   }

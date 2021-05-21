@@ -15,7 +15,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -200,7 +200,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 animate__animated animate__fadeInUp animate__delay-1s" data-aos="fade-left" data-aos-delay="200">
+                            <div class="col-lg-6 animate__animated animate__fadeInUp animate__delay-1s"
+                                data-aos="fade-left" data-aos-delay="200">
                                 <img src="images/google-workspace.png" class="img-fluid  pt-5">
                             </div>
                         </div>
@@ -335,7 +336,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right" >
+                <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
                     <!-- <div class="content d-flex flex-column justify-content-center">
                 <h3 class="text-center">HRMS</h3>
               </div> -->
@@ -450,8 +451,7 @@
                 <div class="col-lg-8 d-flex align-items-stretch">
                     <div class="icon-boxes d-flex flex-column justify-content-center">
                         <div class="row">
-                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in"
-                                data-aos-delay="100">
+                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <img src="images/seo.jpg" alt="" class="img-fluid">
                                     <h4>SEO</h4>
@@ -460,8 +460,7 @@
                                     <a href="#" class="btn btn-danger btn-sm">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in"
-                                data-aos-delay="200">
+                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <img src="images/smo.jpg" alt="" class="img-fluid">
                                     <h4>SMO</h4>
@@ -470,8 +469,7 @@
                                     <a href="#" class="btn btn-danger btn-sm">Read More</a>
                                 </div>
                             </div>
-                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in"
-                                data-aos-delay="300">
+                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <img src="images/smm.png" alt="" class="img-fluid">
                                     <h4>SMM</h4>
@@ -514,7 +512,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card">
                         <img class="card-img-top" src="images/blogs/1.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -527,7 +525,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card">
                         <img class="card-img-top" src="images/blogs/benifits.png" alt="Card image cap">
                         <div class="card-body">
@@ -539,7 +537,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-delay="300">
                     <div class="card">
                         <img class="card-img-top" src="images/blogs/rightstaffing.png" alt="Card image cap">
                         <div class="card-body">
@@ -691,7 +689,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <p class="mb-0">@ 2021 <span class="text-red">Red </span> Bixbite Solutions Pvt. Ltd. All rights reserved.</p>
+                    <p class="mb-0">@ 2021 <span class="text-red">Red </span> Bixbite Solutions Pvt. Ltd. All rights
+                        reserved.</p>
                 </div>
                 <div class="col-lg-6">
                     <p class="mb-0 float-right"><a href="#" class="text-white">privacy policy</a></p>
@@ -707,6 +706,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/aos.js"></script>
+
+
+    <!-- For our solution -->
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -728,6 +730,10 @@
             }
         });
     </script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
     <!-- Fixed header on scroll -->
     <script>
         $(window).scroll(function () {
@@ -745,6 +751,7 @@
         });
     </script>
 
+    <!-- Multilevel  dropdown -->
     <script>
         (function ($) {
             $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
@@ -763,17 +770,17 @@
         })(jQuery);
 
         // Init AOS
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  }
-  $(window).on('load', function() {
-    aos_init();
-  });
+        function aos_init() {
+            AOS.init({
+                duration: 1000,
+                easing: "ease-in-out",
+                once: true,
+                mirror: false
+            });
+        }
+        $(window).on('load', function () {
+            aos_init();
+        });
     </script>
 </body>
 

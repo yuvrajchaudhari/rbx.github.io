@@ -1,3 +1,8 @@
+html,
+body{
+width:100%;
+overflow-x:hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,14 +20,7 @@ li{list-style-type: none;}
 }
 .text-semi-bold{font-weight: 600;}
 
-/*--------------------------------------------------------------
-# Disable AOS delay on mobile
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
+
 
 /* ------------------Header
 --------------------------------- */
@@ -574,6 +572,13 @@ footer .fa-youtube {
   }
   }
   @media(max-width:768px){
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+[data-aos-delay] {
+  transition-delay: 0 !important;
+}
+
     .enterprise .content {
       padding: 7px;
   }

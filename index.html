@@ -5,6 +5,7 @@
     <title>Red Bixbite Pvt Ltd.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -20,8 +21,8 @@
 
 <body>
     <!-- header start -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header id="menu_area" class="menu-area">
+        <nav class="navbar navbar-expand-xl navbar-light mainmenu">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="Red Bixbite Solutions PVt Ltd"
@@ -35,11 +36,45 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Solutions</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Solutions</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">DOC Brains</a></li>
+                                <li><a href="#">WMS</a></li>
+                                <li><a href="#">HRMS</a></li>
+                                <li><a href="#">E-Governance</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">Google Workspace</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Digital
+                                        Marketing</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a href="#">SEO</a></li>
+                                        <li><a href="#">Social Media Optimization</a></li>
+                                        <li><a href="#">Google Ads</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Staff
+                                        Augmentation</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a href="#">Permanent Staffing</a></li>
+                                        <li><a href="#">Contractual Staffing</a></li>
+                                        <li><a href="#">Contract to Hire</a></li>
+                                        <li><a href="#">Virtual Staffing</a></li>
+                                        <li><a href="#">Offshore Staffing</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
@@ -47,6 +82,37 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">FAQ</a>
                         </li>
+                        <!-- multilevel dropdown -->
+                        <!-- <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Dropdown3</a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <!--End multilevel dropdown -->
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Careers</a>
                         </li>
@@ -63,11 +129,20 @@
 
     <!--Start banner section -->
     <section class="banner">
-        <!-- <div class="circle1">
+        <div class="circle1">
             <img src="images/circle.png">
         </div>
         <div class="circle2">
             <img src="images/circle.png">
+        </div>
+        <!-- <div class="cross">
+            <img src="images/cross_animation.png" class="xcross">
+        </div>
+        <div class="cross1">
+            <img src="images/cross_animation.png" class="xcross">
+        </div>
+        <div class="cross2">
+            <img src="images/cross_animation.png" class="xcross">
         </div> -->
         <div class="container">
             <div id="demo" class="carousel" data-ride="carousel">
@@ -227,23 +302,23 @@
                 </div>
                 <div class="item">
                     <div class="product">
-                        <img src="images/products/wms.png" alt="WMS" class="img-fluid product-image">
-                        <div class="product-content">My Name is John Hover over the image to see the effect.</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product">
-                        <img src="images/products/wms.png" alt="WMS" class="img-fluid product-image">
-                        <div class="product-content">My Name is John Hover over the image to see the effect.</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product">
-                        <img src="images/products/wms.png" alt="WMS" class="img-fluid product-image">
-                        <div class="product-content">My Name is John Hover over the image to see the effect.</div>
-                    </div>
-                </div>
+                        <img src="images/products/google-workspace.jpg" alt="Google workspace"
+                            class="img-fluid product-image">
+                        <div class="product-content">
+                            <h3><span><img src="images/google.png"
+                                        style="height: 28px; width: 82px;display: inline-block;"></span> Workspace</h3>
+                            <p>Google workspace lets your organization control the data, so you can secure and optimize
+                                it, break down information silos, and leverage Artificial Intelligence (AI) to Make your
+                                teams faster, more collaborative and better informed than ever before</p>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a class="btn btn-light">Read More</a>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -256,7 +331,6 @@
                 <div class="col-lg-12">
                     <div class="text-center">
                         <h2 class="title"><span class="text-red">Enterprise</span> solution</h2>
-
                     </div>
                 </div>
             </div>
@@ -318,13 +392,20 @@
     <section class="section-pd section-pb" style="background-color: #f2f5f6;">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h2 class="text-uppercase"><span class="text-red">Orionzi</span></h2>
+                        <h2 class="title">Warehouse <span class="text-red">Management</span> solution</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-6">
-                    <img src="images/wms-section-homepage.jpg" class="img-fluid" alt="">
+                    <img src="images/wms-section-homepage.jpg" style="width:100%;" class="img-fluid mb-3" alt="">
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <h2 class="title pb-3"><span class="text-red">Orionzi</span> Warehouse Management solution</h2>
-                        <p class="text-justify">
+                        <p class="text-justify orionzi-paragraph">
                             Orionzi is a smart and simplest cloud-based WMS platform specifically designed for all
                             enterprises looking to switch from a manual process to a fully automated system with a
                             cost-effective solution. Orionzi WMS Platform is specially developed to support your day to
@@ -336,8 +417,9 @@
                             and reduce the operating cost.
                         </p>
                         <h5 class="pb-3 text-left"><b>Switch to Orionzi WMS within 7 Days!</b></h5>
-                        <div class="">
-                            <a href="#" class="btn btn-danger">Read More</a>
+                        <div class="text-left">
+                            <a href="#" class="btn btn-danger">Read More</a>&nbsp;&nbsp;<a href="#"
+                                class="btn btn-dark">Request Demo</a>
                         </div>
                     </div>
                 </div>
@@ -435,7 +517,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card">
                         <img class="card-img-top" src="images/blogs/1.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -448,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card">
                         <img class="card-img-top" src="images/blogs/benifits.png" alt="Card image cap">
                         <div class="card-body">
@@ -460,7 +542,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <div class="card">
                         <img class="card-img-top" src="images/blogs/rightstaffing.png" alt="Card image cap">
                         <div class="card-body">
@@ -472,6 +554,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center py-3">
+                <a href="#" class="btn btn-danger">Read More</a>
             </div>
         </div>
     </section>
@@ -489,7 +574,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <p class="text-semi-bold">Drop us a line</p>
                     <div class="contact-form">
                         <form action="/action_page.php">
@@ -582,23 +667,41 @@
                         <img src="images/address.png" alt="#" class="mr-2 rounded-circle" style="width: 22px;">
                         <div class="media-body align-self-center">
                             <address>
-                                C510, 5th Floor, Wisteriaa Fortune, Bhumkar Square - Hinjewadi Phase II Road, Wakad, Pune - 411057 Maharashtra - India.
+                                C510, 5th Floor, Wisteriaa Fortune, Bhumkar Square - Hinjewadi Phase II Road, Wakad,
+                                Pune - 411057 Maharashtra - India.
                             </address>
                         </div>
-                      </div>
-                      <div class="media flex-column flex-md-row">
+                    </div>
+                    <div class="media flex-column flex-md-row">
                         <img src="images/envelope.png" alt="#" class="mr-2 rounded-circle" style="width: 22px;">
                         <div class="media-body align-self-center">
                             <a href="mailto:
                             info@redbixbite.com">
-                            info@redbixbite.com</a>
+                                info@redbixbite.com</a>
                         </div>
-                      </div>
-                    
+                    </div>
+                    <div class="py-4">
+                        <a href="#" target="_blank" title="Facebook" class="fa fa-facebook"></a>
+                        <a href="#" target="_blank" title="Twitter" class="fa fa-twitter"></a>
+                        <a href="#" target="_blank" title="Linkedin" class="fa fa-linkedin"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- copyright footer -->
+    <section class="copy-right py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="mb-0">@ 2021 <span class="text-red">Red </span> Bixbite Solutions Pvt. Ltd. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="mb-0 float-right"><a href="#" class="text-white">privacy policy</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!------------------- Scripts---------------- -->
@@ -642,6 +745,24 @@
                 }
             }
         });
+    </script>
+
+    <script>
+        (function ($) {
+            $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                var $subMenu = $(this).next(".dropdown-menu");
+                $subMenu.toggleClass('show');
+
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                    $('.dropdown-submenu .show').removeClass("show");
+                });
+
+                return false;
+            });
+        })(jQuery)
     </script>
 </body>
 
